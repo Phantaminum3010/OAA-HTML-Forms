@@ -5,28 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <form action="" method="post">
         <fieldset>
             <legend>Add user</legend>
 
-            <div>
+            <div class="big">
                 <label for="firstName">What is your firt name?</label>
                 <input type="text" id="firstName" name="first_name">
             </div>
 
-            <div>
+            <div class="big">
                 <label for="lastName">What is your last name?</label>
                 <input type="text" id="lastName" name="last_name">
             </div>
 
-            <div>
+            <div class="big">
                 <label for="email">Please enter your email address: </label>
                 <input type="email" id="email" name="email_address">
             </div>
 
-            <div>
+            <div class="big">
                 <label for="status">Status:</label>
                 <select name="status" id="status">
                     <option value="student">Student</option>
@@ -35,7 +36,7 @@
                 </select>
             </div>
 
-            <div>
+            <div class="big">
                 <p>Choose your favorite programming language:</p>
                 <div>
                     <input type="radio" id="html" name="button" value="html">
@@ -51,14 +52,30 @@
                 </div>
             </div>
 
-            <div>
+            <div class="big">
                 <label for="comments">Comments: </label>
                 <textarea name="comments" id="comments"></textarea>
             </div>
 
-            <div>
+            <div class="big">
                 <label for="current-date">Current date</label>
                 <input type="date" id="current-date" name="registration-date">
+            </div>
+
+            <div class="big">
+                <div>
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Sign up for newsletter</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="terms-and-conditions" name="terms-and-conditions">
+                    <label for="terms-and-conditions">Agree to terms and conditions</label>
+                </div>
+            </div>
+
+            <div class="big">
+                <button type="submit" value="send-request">Submit</button>
             </div>
 
         </fieldset>
